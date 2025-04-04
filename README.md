@@ -1,4 +1,4 @@
-Projeto: Vinheria Angello
+Projeto: Vinheria Agnello
 
 Tech:
 

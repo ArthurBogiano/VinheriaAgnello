@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Vinheria Angello</title>
+    <title>Vinheria Agnello</title>
     <meta charset="UTF-8">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
@@ -39,7 +39,7 @@
 
 <div class="container mt-5">
     <div class="hero">
-        <h1>Vinheria Angello</h1>
+        <h1>Vinheria Agnello</h1>
         <p>Os melhores vinhos selecionados especialmente para você. Desfrute de uma experiência única e exclusiva.</p>
         <div>
             <a href="login.jsp" class="btn btn-primary me-2">Login</a>
