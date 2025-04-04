@@ -10,4 +10,4 @@ Tech:
 Dependencias de desenvolvimento:
 
 - Servidor mysql localhost rodando (user: root, senha: )
-- Coloque esses arquivos numa pasta VinheriaAngello em Documents/NetbeansProjects
+- Coloque esses arquivos numa pasta VinheriaAgnello em Documents/NetbeansProjects
