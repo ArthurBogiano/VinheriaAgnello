@@ -9,7 +9,8 @@ CREATE TABLE users (
     nome VARCHAR(100) NOT NULL,
     data_nascimento DATE NOT NULL,
     cpf VARCHAR(20) NOT NULL,
-    endereco VARCHAR(255) NOT NULL
+    endereco VARCHAR(255) NOT NULL,
+    admin TINYINT NOT NULL DEFAULT 0
 );
 
 CREATE TABLE products (
@@ -30,3 +31,5 @@ CREATE TABLE sales (
     FOREIGN KEY (user_id) REFERENCES users(id),
     FOREIGN KEY (product_id) REFERENCES products(id)
 );
+
+INSERT INTO `users` (`id`, `username`, `password`, `nome`, `data_nascimento`, `cpf`, `endereco`, `admin`) VALUES (1, 'agnello', 'admin', 'Agnello', '2000-01-01', '123.456.789-09', 'Rua teste, 123, Rio de Janeiro - RJ', '1')
