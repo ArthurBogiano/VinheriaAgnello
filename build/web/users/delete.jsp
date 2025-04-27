@@ -1,7 +1,10 @@
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
-    <title>Excluir Usu�rio</title>
+    <meta charset="UTF-8">
+    <title>Excluir Usuário</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body class="bg-light">
@@ -19,9 +22,9 @@
     String message = "";
     if (request.getParameter("confirm") != null) {
         if (User.deleteUser(userId)) {
-            message = "<div class='alert alert-success'>Usu�rio exclu�do com sucesso!</div>";
+            message = "<div class='alert alert-success'>Usuário excluído com sucesso!</div><script>setTimeout(function(){ window.location.href = '../dashboard.jsp'; }, 2000);</script>";
         } else {
-            message = "<div class='alert alert-danger'>Erro ao excluir usu�rio.</div>";
+            message = "<div class='alert alert-danger'>Erro ao excluir usuário.</div>";
         }
     }
 %>
@@ -29,10 +32,10 @@
 <div class="container mt-5">
     <div class="card">
         <div class="card-body">
-            <h3>Excluir Usu�rio</h3>
+            <h3>Excluir Usuário</h3>
             <%= message %>
-            <p>Voc� tem certeza que deseja excluir este usu�rio?</p>
-            <form method="post" action="./delete_user.jsp?id=<%= userId %>">
+            <p>Você tem certeza que deseja excluir este usuário?</p>
+            <form method="post" action="./delete.jsp?id=<%= userId %>">
                 <button type="submit" name="confirm" class="btn btn-danger">Excluir</button>
                 <a href="../dashboard.jsp" class="btn btn-secondary">Cancelar</a>
             </form>

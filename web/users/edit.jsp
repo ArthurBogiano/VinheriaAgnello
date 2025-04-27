@@ -1,7 +1,9 @@
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Editar Usuário</title>
+    <title>Editar UsuÃ¡rio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body class="bg-light">
@@ -27,9 +29,9 @@
         user.setAdmin(request.getParameter("admin") != null);
 
         if (user.update()) {
-            message = "<div class='alert alert-success'>Usuário atualizado com sucesso!</div>";
+            message = "<div class='alert alert-success'>UsuÃ¡rio atualizado com sucesso!</div><script>setTimeout(function(){ window.location.href = '../dashboard.jsp'; }, 2000);</script>";
         } else {
-            message = "<div class='alert alert-danger'>Erro ao atualizar usuário.</div>";
+            message = "<div class='alert alert-danger'>Erro ao atualizar usuÃ¡rio.</div>";
         }
     }
 %>
@@ -37,7 +39,7 @@
 <div class="container mt-5">
     <div class="card">
         <div class="card-body">
-            <h3>Editar Usuário</h3>
+            <h3>Editar UsuÃ¡rio</h3>
             <%= message %>
             <form method="post" action="./edit.jsp?id=<%= user.getId() %>">
                 <div class="mb-3">
@@ -45,7 +47,7 @@
                     <input type="text" name="nome" value="<%= user.getNome() %>" class="form-control" required>
                 </div>
                 <div class="mb-3">
-                    <label>Usuário:</label>
+                    <label>UsuÃ¡rio:</label>
                     <input type="text" name="username" value="<%= user.getUsername() %>" class="form-control" required>
                 </div>
                 <div class="mb-3">
@@ -57,7 +59,7 @@
                     <input type="text" name="cpf" value="<%= user.getCpf() %>" class="form-control" required>
                 </div>
                 <div class="mb-3">
-                    <label>Endereço:</label>
+                    <label>EndereÃ§o:</label>
                     <input type="text" name="endereco" value="<%= user.getEndereco() %>" class="form-control" required>
                 </div>
                 <div class="form-check mb-3">
