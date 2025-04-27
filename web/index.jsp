@@ -11,6 +11,7 @@
   <meta charset="UTF-8">
   <title>Vinheria Agnello</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="https://vinheriaagnello.blob.core.windows.net/imagens/vinheria-agnello-logo.png" type="image/x-icon">
   <style>
   * {
     box-sizing: border-box;
